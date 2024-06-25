@@ -1,0 +1,7 @@
+{% for usuario in usuarios %}
+<h1>Actualizar Usuario</h1>
+<form method="post" action="/usuario/guardar">
+    <input type="text" name="nombres" value="{{ usuario{3}}}" 
+    <input type="submit" value="registrar">
+</form>
+{% endfor %}

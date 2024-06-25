@@ -1,0 +1,18 @@
+<h1>Usuarios</h1>
+<ul>
+    {% for usuario in usuarios %}
+    <li>
+        <strong>Username:</strong> {{usuario[1] }}
+    </li>
+    <li>
+        <strong>Nombres y Apellidos:</strong> {{ usuario[3] + ' ' + usuario[4] }}
+    </li>
+    <li>
+        <strong>Tipo:</strong> {{ usuario[5] }}
+    </li>
+    <li>
+        <strong>Email:</strong> {{ usuario[7] }}
+    </li>
+    <br>
+    {% endfor %}
+</ul>
